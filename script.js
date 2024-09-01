@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     const covidDataElement = document.getElementById('covid-data');
 
-    fetch('https://api.covid19api.com/summary')
+
+
+    fetch('https://api.api-ninjas.com/v1/covid19?country=malaysia')
         .then(response => response.json())
         .then(data => {
             const globalStats = data.Global;
